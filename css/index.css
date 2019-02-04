@@ -28,6 +28,7 @@ p {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 .carousel {
   width: 100%;
@@ -87,6 +88,9 @@ p {
 .background {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
+}
+.background .carousel img {
+  border-radius: 10px;
 }
 .about {
   display: flex;
