@@ -80,6 +80,22 @@ p {
 .logo img {
   margin-right: 20px;
 }
-body {
+.container {
+  text-align: center;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+}
+.quote,
+footer {
   text-align: center;
 }
