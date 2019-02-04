@@ -50,6 +50,15 @@ p {
   overflow: hidden;
   margin-top: 16px;
 }
+@media (max-width: 500px) {
+  .background .carousel {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 350px;
+  }
+}
 .background .carousel .left-button,
 .background .carousel .right-button {
   display: flex;
@@ -131,10 +140,24 @@ p {
     margin-top: 10px;
   }
 }
+@media (max-width: 500px) {
+  .background .cta-text h1 {
+    font-size: 3.5rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
 .background .cta-text h2 {
   margin-top: 15px;
   padding-bottom: 20px;
   color: white;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  .background .cta-text h2 {
+    font-size: 2rem;
+  }
 }
 .background .carousel img {
   border-radius: 10px;
