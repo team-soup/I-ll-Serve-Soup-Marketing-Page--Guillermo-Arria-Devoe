@@ -87,18 +87,28 @@
         padding-bottom: 15px;
 
         @media @tablet {
-            .flex(space-between)
+            .flex(@dir: column);
         }
 
         h2 {
             text-align: center;
+            width: 20%;
+
+            @media @tablet {
+                width: 70%;
+                margin-bottom: 5px;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
         }
 
         p {
             width: 70%;
 
             @media @tablet {
-                width: 65%;
+                width: 100%;
             }
         }
     }

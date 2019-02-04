@@ -178,20 +178,32 @@ p {
 @media (max-width: 800px) {
   .middle-content .about {
     display: flex;
-    justify-content: space-between;
+    justify-content: none;
     align-items: none;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .middle-content .about h2 {
   text-align: center;
+  width: 20%;
+}
+@media (max-width: 800px) {
+  .middle-content .about h2 {
+    width: 70%;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .middle-content .about h2 {
+    width: 100%;
+  }
 }
 .middle-content .about p {
   width: 70%;
 }
 @media (max-width: 800px) {
   .middle-content .about p {
-    width: 65%;
+    width: 100%;
   }
 }
 .middle-content .features {
