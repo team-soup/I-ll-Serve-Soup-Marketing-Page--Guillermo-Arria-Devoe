@@ -133,7 +133,7 @@ p {
   border-radius: 10px;
 }
 .middle-content {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
 }
 .middle-content .about {
@@ -142,7 +142,8 @@ p {
   align-items: baseline;
   flex-direction: row;
   border-bottom: 5px double #30323D;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .middle-content .about h2 {
   text-align: center;
@@ -155,6 +156,9 @@ p {
   justify-content: space-evenly;
   align-items: none;
   flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 5px double #30323D;
 }
 .quote,
 footer {
