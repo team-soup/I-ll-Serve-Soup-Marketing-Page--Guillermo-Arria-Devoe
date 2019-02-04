@@ -97,8 +97,8 @@ p {
   box-shadow: 0px 0px 15px black;
 }
 .button:hover {
-  background-color: #989788;
-  transition-duration: 1s;
+  background-color: honeydew;
+  color: #30323D;
 }
 .logo {
   display: flex;
@@ -157,7 +157,7 @@ p {
   align-items: none;
   flex-direction: row;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-bottom: 5px double #30323D;
 }
 .middle-content .features .feature p {
