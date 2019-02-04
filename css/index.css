@@ -206,6 +206,11 @@ p {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .middle-content .about p {
+    text-align: center;
+  }
+}
 .middle-content .features {
   display: flex;
   justify-content: space-evenly;
@@ -250,12 +255,26 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+  }
+}
 footer .quote {
   text-align: center;
 }
 @media (max-width: 800px) {
   footer .quote {
     width: 48%;
+  }
+}
+@media (max-width: 500px) {
+  footer .quote {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 footer .quote h3 {

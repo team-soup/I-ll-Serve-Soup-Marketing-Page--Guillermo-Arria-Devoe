@@ -110,6 +110,10 @@
             @media @tablet {
                 width: 100%;
             }
+
+            @media @phone {
+                text-align: center;
+            }
         }
     }
 
@@ -150,11 +154,20 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 
+    @media @phone {
+        .flex(@dir: column)
+    }
+
     .quote {
         text-align: center;
 
         @media @tablet {
             width: 48%;
+        }
+
+        @media @phone {
+            width: 100%;
+            margin-bottom: 10px;
         }
         
         h3 {
