@@ -71,3 +71,15 @@ p {
   width: 100%;
   display: none;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.logo img {
+  margin-right: 20px;
+}
+body {
+  text-align: center;
+}
