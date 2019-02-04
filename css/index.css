@@ -1,0 +1,127 @@
+.width-100 {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: 'PT Sans', sans-serif, bold;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: 'PT Sans', sans-serif;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: white;
+  background-color: blue;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: blue;
+  background-color: white;
+  border: 2px solid blue;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
+.button {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: white;
+  padding: 15px 30px;
+  background: black;
+  border-radius: 5px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.logo img {
+  margin-right: 20px;
+}
+.background {
+  background-image: url("background-wood.jpeg");
+  background-size: 100%;
+}
+.background .cta-text h1 {
+  margin-top: 20px;
+}
+.background .carousel img {
+  border-radius: 10px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+}
+.quote,
+footer {
+  text-align: center;
+}
