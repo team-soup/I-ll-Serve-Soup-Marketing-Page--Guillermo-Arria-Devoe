@@ -64,25 +64,29 @@
     margin: 0 auto;
 
     .about {
-        .flex(space-between, baseline);
+        .flex(space-evenly, center);
         border-bottom: 5px double @gunmetal;
-        padding-top: 15px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 15px;
 
         h2 {
             text-align: center;
         }
 
         p {
-            width: 80%;
+            width: 70%;
         }
     }
 
     .features {
         .flex(space-evenly);
         padding-top: 50px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         border-bottom: 5px double @gunmetal;
+
+        .feature p {
+            width: 90%;
+        }
     }
 } 
 
