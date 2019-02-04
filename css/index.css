@@ -105,22 +105,28 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding-top: 15px;
+}
+.logo img {
+  margin-right: 5px;
 }
 .logo h2 {
   color: white;
-}
-.logo img {
-  margin-right: 20px;
+  padding: 0;
 }
 .background {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
 }
 .background .cta-text h1 {
-  margin-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0;
   color: white;
+  font-size: 5rem;
 }
-.background h2 {
+.background .cta-text h2 {
+  margin-top: 15px;
+  padding-bottom: 20px;
   color: white;
 }
 .background .carousel img {
