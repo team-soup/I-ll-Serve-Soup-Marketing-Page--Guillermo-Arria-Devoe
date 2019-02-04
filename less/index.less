@@ -11,15 +11,29 @@
     font-size: 2.4rem;
     color: white;
     padding: 15px 30px;
-    background: black;
+    background: @gunmetal;
     border-radius: 5px;
+    font-family: 'PT Sans', sans-serif, bold;
+    box-shadow: 0px 0px 15px black;
+
+    &:hover {
+        background-color: honeydew;
+        color: @gunmetal;
+    }
 }
+
 // STYLING
 .logo {
     .flex(center,center);
+    padding-top: 15px;
 
     img {
-        margin-right: 20px;
+        margin-right: 5px;
+    }
+
+    h2 {
+        color: white;
+        padding: 0;
     }
 }
 
@@ -28,7 +42,16 @@
     background-size: 100%;
 
     .cta-text h1 {
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        color: white;
+        font-size: 5rem;
+    }
+
+    .cta-text h2 {
+        margin-top: 15px;
+        padding-bottom: 20px;
+        color:white;
     }
 
     .carousel img {
@@ -36,14 +59,50 @@
     }
 }
 
-.about {
-    .flex(space-between, baseline)
-}
+.middle-content {
+    width: 80%;
+    margin: 0 auto;
 
-.features {
-    .flex(space-evenly)
-}
+    .about {
+        .flex(space-evenly, center);
+        border-bottom: 5px double @gunmetal;
+        padding-top: 10px;
+        padding-bottom: 15px;
 
-.quote, footer {
-    text-align: center;
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            width: 70%;
+        }
+    }
+
+    .features {
+        .flex(space-evenly);
+        padding-top: 50px;
+        padding-bottom: 25px;
+        border-bottom: 5px double @gunmetal;
+
+        .feature p {
+            width: 90%;
+        }
+    }
+} 
+
+footer {
+    .flex(space-evenly, center);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .quote {
+        text-align: center;
+        
+        h3 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: 5px;
+        }
+    }
 }
