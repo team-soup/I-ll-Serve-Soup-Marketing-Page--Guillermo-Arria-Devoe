@@ -9,6 +9,7 @@ html {
 }
 body {
   margin: 0;
+  background: honeydew;
 }
 h1,
 h2,
@@ -29,6 +30,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
   font-family: 'PT Sans', sans-serif;
+  color: #30323D;
 }
 .container {
   max-width: 800px;
@@ -37,7 +39,7 @@ p {
   text-align: center;
   color: white;
 }
-.carousel {
+.background .carousel {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -48,14 +50,14 @@ p {
   overflow: hidden;
   margin-top: 16px;
 }
-.carousel .left-button,
-.carousel .right-button {
+.background .carousel .left-button,
+.background .carousel .right-button {
   display: flex;
   justify-content: center;
   align-items: none;
   flex-direction: row;
   color: white;
-  background-color: blue;
+  background-color: #30323D;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
@@ -63,23 +65,23 @@ p {
   height: 50px;
   cursor: pointer;
 }
-.carousel .left-button:hover,
-.carousel .right-button:hover {
-  color: blue;
-  background-color: white;
-  border: 2px solid blue;
+.background .carousel .left-button:hover,
+.background .carousel .right-button:hover {
+  color: #30323D;
+  background-color: honeydew;
+  border: 2px solid #30323D;
 }
-.carousel .left-button {
+.background .carousel .left-button {
   top: 50%;
   left: 25px;
   transform: translate(0, -50%);
 }
-.carousel .right-button {
+.background .carousel .right-button {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
 }
-.carousel img {
+.background .carousel img {
   width: 100%;
   display: none;
 }
@@ -88,13 +90,14 @@ p {
   font-size: 2.4rem;
   color: white;
   padding: 15px 30px;
-  background: black;
+  background: #30323D;
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif, bold;
+  box-shadow: 0px 0px 20px black;
 }
 .button:hover {
-  background-color: honeydew;
-  color: black;
+  background-color: #989788;
+  transition-duration: 1s;
 }
 .logo {
   display: flex;
