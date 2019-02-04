@@ -10,8 +10,13 @@ html {
 body {
   margin: 0;
 }
+h1,
+h2,
+h3 {
+  font-family: 'PT Sans', sans-serif, bold;
+}
 h1 {
-  font-size: 3.8rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 2.8rem;
@@ -22,6 +27,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  font-family: 'PT Sans', sans-serif;
 }
 .container {
   max-width: 800px;
@@ -76,6 +82,14 @@ p {
   width: 100%;
   display: none;
 }
+.button {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: white;
+  padding: 15px 30px;
+  background: black;
+  border-radius: 5px;
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -88,6 +102,9 @@ p {
 .background {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
+}
+.background .cta-text h1 {
+  margin-top: 20px;
 }
 .background .carousel img {
   border-radius: 10px;
