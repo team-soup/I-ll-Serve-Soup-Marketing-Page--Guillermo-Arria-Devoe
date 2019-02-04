@@ -59,13 +59,28 @@
     }
 }
 
-.about {
-    .flex(space-between, baseline)
-}
+.middle-content {
+    width: 95%;
+    margin: 0 auto;
 
-.features {
-    .flex(space-evenly)
-}
+    .about {
+        .flex(space-between, baseline);
+        border-bottom: 5px double @gunmetal;
+        padding-bottom: 15px;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            width: 80%;
+        }
+    }
+
+    .features {
+        .flex(space-evenly)
+    }
+} 
 
 .quote, footer {
     text-align: center;

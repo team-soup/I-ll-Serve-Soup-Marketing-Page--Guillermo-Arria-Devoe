@@ -132,13 +132,25 @@ p {
 .background .carousel img {
   border-radius: 10px;
 }
-.about {
+.middle-content {
+  width: 95%;
+  margin: 0 auto;
+}
+.middle-content .about {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-direction: row;
+  border-bottom: 5px double #30323D;
+  padding-bottom: 15px;
 }
-.features {
+.middle-content .about h2 {
+  text-align: center;
+}
+.middle-content .about p {
+  width: 80%;
+}
+.middle-content .features {
   display: flex;
   justify-content: space-evenly;
   align-items: none;
