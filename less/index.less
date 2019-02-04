@@ -86,24 +86,19 @@
     }
 } 
 
-.quote, footer {
-    text-align: center;
-}
+footer {
+    .flex(space-evenly, center);
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-.quote {
-    border-bottom: 5px double @gunmetal;
-
-    h3 {
-        margin-bottom: 0;
+    .quote {
+        text-align: center;
+        
+        h3 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: 5px;
+        }
     }
-
-    p {
-        margin-top: 10px;
-        padding-bottom: 15px;
-    }
-}
-
-footer{
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
