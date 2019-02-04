@@ -1,43 +1,44 @@
 .background { 
-.carousel {
-    .width-100();
-    .flex(center, center);
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 16px;
-
-    .left-button, .right-button {
-      .flex(center);
-      color: white;
-      background-color: @gunmetal;
-      font-size: 40px;
-      border-radius: 50%;
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      box-shadow: 0px 0px 5px black;
-      cursor: pointer;
-      &:hover {
-        color: @gunmetal;
-        background-color: honeydew;
-        border: 2px solid @gunmetal;
-      }
-    }
-
-    .left-button {
-      top: 50%; 
-      left: 25px;
-      transform: translate(0, -50%);
-    }
-    .right-button {
-      top: 50%; 
-      right: 25px;
-      transform: translate(0, -50%);
-    }
-    img {
+  .carousel {
       .width-100();
-      display: none;
-    }
+      .flex(center, center);
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 16px;
+
+      .left-button, .right-button {
+        .flex(center);
+        color: white;
+        background-color: @gunmetal;
+        font-size: 40px;
+        border-radius: 50%;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+
+        cursor: pointer;
+        &:hover {
+          color: @gunmetal;
+          background-color: honeydew;
+          border: 2px solid @gunmetal;
+        }
+      }
+
+      .left-button {
+        top: 50%; 
+        left: 25px;
+        transform: translate(0, -50%);
+      }
+      .right-button {
+        top: 50%; 
+        right: 25px;
+        transform: translate(0, -50%);
+      }
+      img {
+        .width-100();
+        display: none;
+        box-shadow: 0px 0px 20px black;
+      }
   }
 }
