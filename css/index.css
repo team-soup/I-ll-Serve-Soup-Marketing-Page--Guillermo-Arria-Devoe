@@ -105,10 +105,11 @@ p {
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif, bold;
   box-shadow: 0px 0px 15px black;
+  transition: 0.15s ease-in-out;
 }
 .button:hover {
-  background-color: honeydew;
-  color: #30323D;
+  background-color: #2e964f;
+  color: #FAFAFA;
 }
 .logo {
   display: flex;
