@@ -9,7 +9,7 @@
 .button {
     text-decoration: none;
     font-size: 2.4rem;
-    color: white;
+    color: honeydew;
     padding: 15px 30px;
     background: @gunmetal;
     border-radius: 5px;
@@ -19,7 +19,6 @@
 
     &:hover {
         background-color: @seagreen;
-        color: @offwhite;
     }
 }
 
@@ -33,7 +32,7 @@
     }
 
     h2 {
-        color: white;
+        color: @offwhite;
         padding: 0;
         text-shadow: 0px 0px 20px black;
 
@@ -47,10 +46,14 @@
     background-image: url("background-wood.jpeg");
     background-size: 100%;
 
+    .button {
+        color: @offwhite
+    }
+
     .cta-text h1 {
         margin-top: 0px;
         margin-bottom: 35px;
-        color: white;
+        color: @offwhite;
         font-size: 5rem;
         text-shadow: 0px 0px 20px black;
 
@@ -96,8 +99,8 @@
         .about-hours {
             text-align: center;
             width: 50%;
-            background: #FAFAFA;
-            border: 1px solid @gunmetal;
+            background: @gunmetal;
+            // border: 1px solid @gunmetal;
             border-radius: 5px;
             box-shadow: 0px 0px 5px black;
 
@@ -105,7 +108,12 @@
                 width: 100%;
             }
 
+            h2 {
+                color: honeydew;
+            }
+
             p {
+                color: honeydew;
                 font-weight: 700;
             }
         }
