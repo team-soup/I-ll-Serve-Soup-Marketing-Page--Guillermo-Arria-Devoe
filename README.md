@@ -15,7 +15,9 @@ https://www.notion.so/Web-UI-Developer-Role-9978e2084bcc45a7a182638acf38b956
 
 ## Inspiration:
 https://john2796.github.io/User-Interface-Project-Week/
+
 https://www.shopify.com/free-trial
+
 http://www.rifajackson.org/ministries/soup-kitchen/
 
 ## Random Notes:
