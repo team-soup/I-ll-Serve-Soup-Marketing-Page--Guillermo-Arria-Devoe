@@ -83,18 +83,30 @@
     .about {
         .flex(space-between, center);
         border-bottom: 5px double @gunmetal;
-        padding-top: 10px;
-        padding-bottom: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h2 {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
 
         .about-hours {
+            text-align: center;
             width: 50%;
-            background: white;
+            background: #FAFAFA;
             border: 1px solid @gunmetal;
             border-radius: 5px;
+            box-shadow: 0px 0px 5px black;
+
+            p {
+                font-weight: 700;
+            }
         }
 
         .about-us {
-            width: 40%;
+            text-align: center;
+            width: 45%;
         }
     }
 
