@@ -81,39 +81,20 @@
     margin: 0 auto;
 
     .about {
-        .flex(space-evenly, center);
+        .flex(space-between, center);
         border-bottom: 5px double @gunmetal;
         padding-top: 10px;
         padding-bottom: 15px;
 
-        @media @tablet {
-            .flex(@dir: column);
+        .about-hours {
+            width: 50%;
+            background: white;
+            border: 1px solid @gunmetal;
+            border-radius: 5px;
         }
 
-        h2 {
-            text-align: center;
-            width: 20%;
-
-            @media @tablet {
-                width: 70%;
-                margin-bottom: 5px;
-            }
-
-            @media @phone {
-                width: 100%;
-            }
-        }
-
-        p {
-            width: 70%;
-
-            @media @tablet {
-                width: 100%;
-            }
-
-            @media @phone {
-                text-align: center;
-            }
+        .about-us {
+            width: 40%;
         }
     }
 

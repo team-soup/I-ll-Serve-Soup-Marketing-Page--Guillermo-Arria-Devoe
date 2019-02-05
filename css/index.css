@@ -168,48 +168,21 @@ p {
 }
 .middle-content .about {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   border-bottom: 5px double #30323D;
   padding-top: 10px;
   padding-bottom: 15px;
 }
-@media (max-width: 800px) {
-  .middle-content .about {
-    display: flex;
-    justify-content: none;
-    align-items: none;
-    flex-direction: column;
-  }
+.middle-content .about .about-hours {
+  width: 50%;
+  background: white;
+  border: 1px solid #30323D;
+  border-radius: 5px;
 }
-.middle-content .about h2 {
-  text-align: center;
-  width: 20%;
-}
-@media (max-width: 800px) {
-  .middle-content .about h2 {
-    width: 70%;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 500px) {
-  .middle-content .about h2 {
-    width: 100%;
-  }
-}
-.middle-content .about p {
-  width: 70%;
-}
-@media (max-width: 800px) {
-  .middle-content .about p {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .middle-content .about p {
-    text-align: center;
-  }
+.middle-content .about .about-us {
+  width: 40%;
 }
 .middle-content .features {
   display: flex;
