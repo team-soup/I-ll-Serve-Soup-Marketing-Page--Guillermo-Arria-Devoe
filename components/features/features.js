@@ -1,6 +1,6 @@
 class Feature {
     constructor(domElement) {
-        this.domElement = domElement;
+        this.domElement = domElement; 
     }
 }
 

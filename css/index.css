@@ -299,3 +299,22 @@ footer .quote h3 {
 footer .quote p {
   margin-top: 5px;
 }
+.credits {
+  margin-top: 10px;
+  padding: 15px 0;
+  text-align: center;
+  background: #30323D;
+  box-shadow: 0px 0px 10px black;
+  border-top: 1px groove honeydew;
+}
+.credits p,
+.credits a {
+  font-size: 1.3rem;
+  padding: 5px 5px;
+  margin: 0;
+  color: honeydew;
+  transition: 0.15s;
+}
+.credits a:hover {
+  color: lightskyblue;
+}
