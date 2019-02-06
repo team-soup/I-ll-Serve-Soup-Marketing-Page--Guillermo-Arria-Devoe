@@ -282,6 +282,7 @@ footer .button {
 }
 footer .quote {
   text-align: center;
+  width: 45%;
 }
 @media (max-width: 800px) {
   footer .quote {
