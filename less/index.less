@@ -4,6 +4,8 @@
 @import "reset.less";
 @import "global.less";
 @import "../components/carousel/carousel.less";
+@import "../components/features/features.less";
+
 
 // BUTTON
 .button {
@@ -127,37 +129,6 @@
             @media @phone { 
                 width: 100%;
                 padding-bottom: 15px;
-            }
-        }
-    }
-
-    .features {
-        .flex(space-evenly);
-        padding-top: 50px;
-        padding-bottom: 25px;
-        border-bottom: 5px double @gunmetal;
-
-        @media @tablet {
-            .flex(@dir:column);
-            text-align: center;
-            padding-bottom: 0;
-        }
-
-        .feature h2 {
-            @media @tablet {
-                margin-top: 5px;
-                margin-bottom: 10px;
-            }
-        }
-
-        .feature p {
-            width: 90%;
-
-            @media @tablet {
-                width:100%;
-                text-align: center;
-                margin-bottom: 40px;
-                margin-top: 0;
             }
         }
     }
