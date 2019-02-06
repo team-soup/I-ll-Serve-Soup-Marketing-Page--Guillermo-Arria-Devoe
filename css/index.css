@@ -120,11 +120,9 @@ p {
     padding-bottom: 0;
   }
 }
-@media (max-width: 800px) {
-  .middle-content .features .feature h2 {
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
+.middle-content .features .feature h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .middle-content .features .feature p {
   width: 90%;
