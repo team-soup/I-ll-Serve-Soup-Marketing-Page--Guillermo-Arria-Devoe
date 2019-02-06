@@ -9,16 +9,18 @@
 .button {
     text-decoration: none;
     font-size: 2.4rem;
-    color: white;
+    color: honeydew;
     padding: 15px 30px;
     background: @gunmetal;
     border-radius: 5px;
     font-family: 'PT Sans', sans-serif, bold;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 30px black;
+    transition: 0.15s ease-in-out;
+    border: 1px groove @offwhite;
 
     &:hover {
-        background-color: honeydew;
-        color: @gunmetal;
+        background-color: @spanishgray;
+        // color: @blue
     }
 }
 
@@ -32,7 +34,7 @@
     }
 
     h2 {
-        color: white;
+        color: @offwhite;
         padding: 0;
         text-shadow: 0px 0px 20px black;
 
@@ -46,10 +48,14 @@
     background-image: url("background-wood.jpeg");
     background-size: 100%;
 
+    .button {
+        color: @offwhite
+    }
+
     .cta-text h1 {
         margin-top: 0px;
         margin-bottom: 35px;
-        color: white;
+        color: @offwhite;
         font-size: 5rem;
         text-shadow: 0px 0px 20px black;
 
@@ -95,16 +101,22 @@
         .about-hours {
             text-align: center;
             width: 50%;
-            background: #FAFAFA;
-            border: 1px solid @gunmetal;
+            background: @gunmetal;
+            border: 1px groove @offwhite;
             border-radius: 5px;
-            box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 10px black;
+            padding: 0 10px;
 
             @media @phone {
                 width: 100%;
             }
 
+            h2 {
+                color: honeydew;
+            }
+
             p {
+                color: honeydew;
                 font-weight: 700;
             }
         }
@@ -157,12 +169,17 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 
+    .button {
+        box-shadow: 0px 0px 10px black;
+    }
+
     @media @phone {
         .flex(@dir: column)
     }
 
     .quote {
         text-align: center;
+        width: 45%;
 
         @media @tablet {
             width: 48%;
