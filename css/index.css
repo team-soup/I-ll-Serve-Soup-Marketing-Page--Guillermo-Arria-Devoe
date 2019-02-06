@@ -55,7 +55,7 @@ p {
     margin: 0 auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .background .carousel {
     margin-top: 0;
     margin-bottom: 0;
@@ -165,7 +165,7 @@ p {
   padding: 0;
   text-shadow: 0px 0px 20px black;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logo h2 {
     font-size: 2.5rem;
   }
@@ -190,7 +190,7 @@ p {
     margin-top: 10px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .background .cta-text h1 {
     font-size: 3rem;
     width: 75%;
@@ -215,7 +215,7 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .middle-content .about {
     display: flex;
     justify-content: none;
@@ -237,7 +237,7 @@ p {
   box-shadow: 0px 0px 10px black;
   padding: 0 10px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .middle-content .about .about-hours {
     width: 100%;
   }
@@ -253,7 +253,7 @@ p {
   text-align: center;
   width: 45%;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .middle-content .about .about-us {
     width: 100%;
     padding-bottom: 15px;
@@ -270,7 +270,7 @@ footer {
 footer .button {
   box-shadow: 0px 0px 10px black;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   footer {
     display: flex;
     justify-content: none;
@@ -287,7 +287,7 @@ footer .quote {
     width: 48%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   footer .quote {
     width: 100%;
     margin-bottom: 10px;
