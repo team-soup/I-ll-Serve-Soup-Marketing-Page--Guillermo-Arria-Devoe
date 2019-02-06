@@ -49,6 +49,12 @@ p {
   overflow: hidden;
   margin-top: 16px;
 }
+@media (max-width: 800px) {
+  .background .carousel {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 500px) {
   .background .carousel {
     margin-top: 0;
@@ -67,7 +73,7 @@ p {
   background-color: #30323D;
   font-size: 40px;
   border-radius: 50%;
-  border: 1px solid honeydew;
+  border: 1px groove #FAFAFA;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -103,11 +109,12 @@ p {
   background: #30323D;
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif, bold;
-  box-shadow: 0px 0px 15px black;
+  box-shadow: 0px 0px 30px black;
   transition: 0.15s ease-in-out;
+  border: 1px groove #FAFAFA;
 }
 .button:hover {
-  background-color: #2e964f;
+  background-color: #989788;
 }
 .logo {
   display: flex;
@@ -191,8 +198,10 @@ p {
   text-align: center;
   width: 50%;
   background: #30323D;
+  border: 1px groove #FAFAFA;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 10px black;
+  padding: 0 10px;
 }
 @media (max-width: 500px) {
   .middle-content .about .about-hours {
@@ -259,6 +268,9 @@ footer {
   flex-direction: row;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+footer .button {
+  box-shadow: 0px 0px 10px black;
 }
 @media (max-width: 500px) {
   footer {

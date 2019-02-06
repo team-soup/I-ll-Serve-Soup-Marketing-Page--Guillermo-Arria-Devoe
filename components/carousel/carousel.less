@@ -7,6 +7,11 @@
       overflow: hidden;
       margin-top: 16px;
 
+      @media @tablet {
+        width: 95%;
+        margin: 0 auto;
+      }
+
       @media @phone {
         margin-top: 0;
         margin-bottom: 0;
@@ -20,7 +25,7 @@
         background-color: @gunmetal;
         font-size: 40px;
         border-radius: 50%;
-        border: 1px solid honeydew;
+        border: 1px groove @offwhite;
         position: absolute;
         width: 40px;
         height: 40px;

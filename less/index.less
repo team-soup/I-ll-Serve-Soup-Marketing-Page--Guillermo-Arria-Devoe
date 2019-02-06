@@ -14,11 +14,13 @@
     background: @gunmetal;
     border-radius: 5px;
     font-family: 'PT Sans', sans-serif, bold;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 30px black;
     transition: 0.15s ease-in-out;
+    border: 1px groove @offwhite;
 
     &:hover {
-        background-color: @seagreen;
+        background-color: @spanishgray;
+        // color: @blue
     }
 }
 
@@ -100,9 +102,10 @@
             text-align: center;
             width: 50%;
             background: @gunmetal;
-            // border: 1px solid @gunmetal;
+            border: 1px groove @offwhite;
             border-radius: 5px;
-            box-shadow: 0px 0px 5px black;
+            box-shadow: 0px 0px 10px black;
+            padding: 0 10px;
 
             @media @phone {
                 width: 100%;
@@ -165,6 +168,10 @@ footer {
     .flex(space-evenly, center);
     padding-top: 20px;
     padding-bottom: 20px;
+
+    .button {
+        box-shadow: 0px 0px 10px black;
+    }
 
     @media @phone {
         .flex(@dir: column)
