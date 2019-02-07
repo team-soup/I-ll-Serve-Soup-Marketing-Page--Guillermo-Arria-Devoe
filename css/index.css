@@ -351,7 +351,10 @@ footer .box-active {
 .credits {
   margin-top: 10px;
   padding: 15px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background: #30323D;
   box-shadow: 0px 0px 10px black;
   border-top: 1px groove honeydew;
@@ -359,10 +362,11 @@ footer .box-active {
 .credits p,
 .credits a {
   font-size: 1.3rem;
-  padding: 5px 5px;
+  padding: 10px 10px;
   margin: 0;
   color: honeydew;
   transition: 0.15s;
+  letter-spacing: 1.5px;
 }
 .credits a:hover {
   color: lightskyblue;

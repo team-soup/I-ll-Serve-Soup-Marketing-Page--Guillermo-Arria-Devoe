@@ -216,17 +216,18 @@ footer {
 .credits {
     margin-top: 10px;
     padding: 15px 0;
-    text-align: center;
+    .flex(@jc: center, @ai: center);
     background: @gunmetal;
     box-shadow: 0px 0px 10px black;
     border-top: 1px groove honeydew;
 
     p,a {
         font-size: 1.3rem;
-        padding: 5px 5px;
+        padding: 10px 10px;
         margin: 0;
         color: honeydew;
         transition: .15s;
+        letter-spacing: 1.5px;
     }
 
     a {
