@@ -129,6 +129,9 @@
             border-radius: 5px;
             box-shadow: 0px 0px 10px black;
             padding: 0 10px;
+            transition: all 0.5s ease-in-out;
+            transform: translate3d(0px, 30px, 0);
+            opacity: 0;
 
             @media @phone {
                 width: 100%;
@@ -147,11 +150,19 @@
         .about-us {
             text-align: center;
             width: 45%;
+            transition: all 0.5s ease-in-out;
+            transform: translate3d(0px, 30px, 0);
+            opacity: 0;
 
             @media @phone { 
                 width: 100%;
                 padding-bottom: 15px;
             }
+        }
+
+        .box-active {
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
         }
     }
 } 

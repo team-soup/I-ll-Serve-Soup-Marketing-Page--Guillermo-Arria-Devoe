@@ -27,7 +27,5 @@ function getPosition(element) {
     return yPosition
 }
 
-// Implementing an array method
-// Array.from(features).map(feature => feature.setAttribute('data-aos','fade-up'))
 
 

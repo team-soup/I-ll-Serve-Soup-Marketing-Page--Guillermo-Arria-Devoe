@@ -2,8 +2,6 @@ let topContainer = document.querySelector('.container');
 
 topContainerChildren = Array.from(topContainer.children);
 
-console.log(topContainerChildren);
-
 window.addEventListener('load', textIn);
 window.addEventListener('load', boxIn);
 
