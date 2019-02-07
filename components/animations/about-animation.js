@@ -15,8 +15,6 @@ function getPosition(element) {
     return yPosition
 }
 
-console.log(aboutSectionChildren[0]);
-console.log(aboutSectionChildren[1]);
 
 function scrolling() {
     if (pageYOffset + 475 > getPosition(aboutSectionChildren[0])) {
@@ -25,7 +23,7 @@ function scrolling() {
         aboutSectionChildren[1].classList.add('box-active');
     } if (pageYOffset + 475 < getPosition(aboutSectionChildren[0])) {
         aboutSectionChildren[0].classList.remove('box-active');
-    } if (pageYOffset + 475 < getPosition(aboutSectionChildren[0])) {
+    } if (pageYOffset + 475 < getPosition(aboutSectionChildren[1])) {
         aboutSectionChildren[1].classList.remove('box-active');
     }
 }
