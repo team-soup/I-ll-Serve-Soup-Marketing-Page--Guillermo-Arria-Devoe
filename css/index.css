@@ -366,7 +366,11 @@ footer .box-active {
   margin: 0;
   color: honeydew;
   transition: 0.15s;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.credits p {
+  padding-right: 20px;
 }
 .credits a:hover {
   color: lightskyblue;
