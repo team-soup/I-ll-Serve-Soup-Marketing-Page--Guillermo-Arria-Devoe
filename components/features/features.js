@@ -1,13 +1,12 @@
 class Feature {
     constructor(domElement) {
         this.domElement = domElement;
-        window.addEventListener('scroll',this.scrolling.bind(this));
+        // window.addEventListener('scroll',this.scrolling.bind(this));
+        $(window).scroll(this.scrolling.bind(this));
     };
 
     scrolling () {
-        console.log(`scroll:${pageYOffset}`);
-        console.log(getPosition(this.domElement));
-        if (pageYOffset < getPosition(this.domElement)) {
+        if (pageYOffset + 475 > getPosition(this.domElement)) {
             this.domElement.classList.add('feature-active');
         } else {
             this.domElement.classList.remove('feature-active');
@@ -29,7 +28,5 @@ function getPosition(element) {
     return yPosition
 }
 
-// Implementing an array method
-// Array.from(features).map(feature => feature.setAttribute('data-aos','fade-up'))
 
 

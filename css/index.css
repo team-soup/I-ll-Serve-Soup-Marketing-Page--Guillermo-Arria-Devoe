@@ -184,6 +184,25 @@ p {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
 }
+.background .logo,
+.background .cta {
+  transition: all 0.75s ease-in-out;
+  transform: translate3d(0px, -100px, 0);
+  opacity: 0;
+}
+.background .carousel {
+  transition: all 0.75s ease-in-out;
+  transform: translate3d(0px, 100px, 0);
+  opacity: 0;
+}
+.background .text-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.background .box-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 .background .button {
   color: #FAFAFA;
 }
@@ -246,6 +265,9 @@ p {
   border-radius: 5px;
   box-shadow: 0px 0px 10px black;
   padding: 0 10px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
 }
 @media (max-width: 600px) {
   .middle-content .about .about-hours {
@@ -262,12 +284,19 @@ p {
 .middle-content .about .about-us {
   text-align: center;
   width: 45%;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
 }
 @media (max-width: 600px) {
   .middle-content .about .about-us {
     width: 100%;
     padding-bottom: 15px;
   }
+}
+.middle-content .about .box-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 footer {
   display: flex;
@@ -279,6 +308,9 @@ footer {
 }
 footer .button {
   box-shadow: 0px 0px 10px black;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
 }
 @media (max-width: 600px) {
   footer {
@@ -291,6 +323,9 @@ footer .button {
 footer .quote {
   text-align: center;
   width: 45%;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
 }
 @media (max-width: 800px) {
   footer .quote {
@@ -309,10 +344,17 @@ footer .quote h3 {
 footer .quote p {
   margin-top: 5px;
 }
+footer .box-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 .credits {
   margin-top: 10px;
   padding: 15px 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background: #30323D;
   box-shadow: 0px 0px 10px black;
   border-top: 1px groove honeydew;
@@ -320,10 +362,15 @@ footer .quote p {
 .credits p,
 .credits a {
   font-size: 1.3rem;
-  padding: 5px 5px;
+  padding: 10px 10px;
   margin: 0;
   color: honeydew;
   transition: 0.15s;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.credits p {
+  padding-right: 20px;
 }
 .credits a:hover {
   color: lightskyblue;
