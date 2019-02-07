@@ -1,6 +1,6 @@
 const toggleMenu = (e) => {
     // Toggle the "menu--open" class on your menu refence.
-    $(".menu").animate({width:'toggle'},350); // STRETCH
+    $(".menu").animate({height:'toggle'},350); // STRETCH
     e.stopPropagation();
   }
   
