@@ -1,0 +1,61 @@
+.menu-button {
+    cursor: pointer;
+    margin-left: 20px;
+    border: 1px groove @offwhite;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px black;
+    transition: .15s;
+
+    &:hover {
+        background: @queenblue;
+    }
+}
+
+.menu {
+    display: none;
+    position: relative;
+    top: 20px;
+    background-color: @gunmetal;
+    border: 1px groove @offwhite;
+    z-index: 3; /* This set the layer level of the element, it has precendence over initial level of 1*/
+    box-shadow: 0px 0px 30px black;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+    @media @tablet {
+        width: 75%;
+    }
+
+    @media @phone {
+        width: 95%;
+    }
+}
+
+.menu ul {
+    .flex(space-evenly,center);
+    padding: 0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif, bold;
+    font-size: 2rem;
+    color: @offwhite;
+    text-shadow: 0px 0px 10px black;
+
+    &:hover {
+        color: lightskyblue;
+    }
+}
+
+.menu--open {
+    display: block;
+}
