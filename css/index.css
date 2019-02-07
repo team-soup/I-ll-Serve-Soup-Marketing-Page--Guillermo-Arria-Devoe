@@ -108,6 +108,17 @@ p {
   flex-direction: row;
   padding: 0;
   border-bottom: 5px double #30323D;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.middle-content .features .feature {
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
+}
+.middle-content .features .feature-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 @media (max-width: 800px) {
   .middle-content .features {
