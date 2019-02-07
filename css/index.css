@@ -70,7 +70,6 @@ p {
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  background-color: #30323D;
   font-size: 40px;
   border-radius: 50%;
   border: 1px groove #FAFAFA;
@@ -78,13 +77,13 @@ p {
   width: 40px;
   height: 40px;
   box-shadow: 0px 0px 10px black;
+  transition: 0.15s;
   cursor: pointer;
 }
 .background .carousel .left-button:hover,
 .background .carousel .right-button:hover {
-  color: #30323D;
-  background-color: honeydew;
-  border: 1px solid #30323D;
+  width: 43px;
+  height: 43px;
 }
 .background .carousel .left-button {
   top: 50%;
@@ -152,6 +151,7 @@ p {
   border-radius: 5px;
   box-shadow: 0px 0px 30px black;
   transition: 0.15s;
+  background: #2e964f;
 }
 .menu-button:hover {
   background: #356799;
@@ -160,7 +160,6 @@ p {
   display: none;
   position: relative;
   top: 20px;
-  background-color: #30323D;
   border: 1px groove #FAFAFA;
   z-index: 3;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
@@ -169,6 +168,7 @@ p {
   margin: 0 auto;
   margin-bottom: 50px;
   border-radius: 5px;
+  background: #2e964f;
 }
 @media (max-width: 800px) {
   .menu {
@@ -207,14 +207,15 @@ p {
 }
 .button {
   text-decoration: none;
-  font-size: 2.4rem;
-  color: honeydew;
+  font-size: 2rem;
+  color: #FAFAFA;
   padding: 15px 30px;
   border-radius: 5px;
   font-family: 'PT Sans', sans-serif, bold;
   box-shadow: 0px 0px 30px black;
   transition: 0.15s ease-in-out;
   border: 1px groove #FAFAFA;
+  background: #2e964f;
 }
 .button:hover {
   background-color: #356799;
@@ -242,6 +243,7 @@ p {
 .background {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
+  background-repeat: round;
 }
 .background .logo,
 .background .cta {

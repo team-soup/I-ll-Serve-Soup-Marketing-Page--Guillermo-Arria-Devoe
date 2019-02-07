@@ -1,6 +1,6 @@
 const toggleMenu = (e) => {
     // Toggle the "menu--open" class on your menu refence.
-    $(".menu").animate({height:'toggle'},350); // STRETCH
+    $(".menu").animate({height:'toggle'},450); // STRETCH
     e.stopPropagation();
   }
   
@@ -12,5 +12,6 @@ const toggleMenu = (e) => {
   menuButton.addEventListener('click', toggleMenu)
   
   $(document).click(function(){
-    $(".menu").hide();
+    $(".menu").animate({height:'hide'},450);
+    e.stopPropagation();
   });
