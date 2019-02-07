@@ -4,13 +4,13 @@
 @import "global.less";
 @import "../components/carousel/carousel.less";
 @import "../components/features/features.less";
-@import "./components/menu/menu.less";
+@import "../components/menu/menu.less";
 
 // BUTTON
 .button {
     text-decoration: none;
-    font-size: 2.4rem;
-    color: honeydew;
+    font-size: 2rem;
+    color: @offwhite;
     padding: 15px 30px;
     border-radius: 5px;
     font-family: 'PT Sans', sans-serif, bold;
@@ -46,6 +46,7 @@
 .background {
     background-image: url("background-wood.jpeg");
     background-size: 100%;
+    background-repeat: round;
 
     .logo, .cta {
         transition: all 0.75s ease-in-out;
