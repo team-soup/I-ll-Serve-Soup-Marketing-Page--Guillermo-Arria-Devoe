@@ -2,8 +2,11 @@ let topContainer = document.querySelector('.container');
 
 topContainerChildren = Array.from(topContainer.children);
 
-window.addEventListener('load', textIn);
-window.addEventListener('load', boxIn);
+// window.addEventListener('load', textIn);
+// window.addEventListener('load', boxIn);
+
+$(window).load(textIn);
+$(window).load(boxIn);
 
 // USING .MAP ARRAY METHOD
 function textIn() {
