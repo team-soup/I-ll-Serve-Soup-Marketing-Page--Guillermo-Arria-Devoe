@@ -17,13 +17,13 @@ function getPosition(element) {
 }
 
 function scrolling() {
-    if (pageYOffset + 475 > getPosition(footerChildren[0])) {
+    if (pageYOffset + 600 > getPosition(footerChildren[0])) {
         footerChildren[0].classList.add('box-active');
-    } if (pageYOffset + 475 > getPosition(footerChildren[1])) {
+    } if (pageYOffset + 600 > getPosition(footerChildren[1])) {
         footerChildren[1].classList.add('box-active');
-    } if (pageYOffset + 475 < getPosition(footerChildren[0])) {
+    } if (pageYOffset + 600 < getPosition(footerChildren[0])) {
         footerChildren[0].classList.remove('box-active');
-    } if (pageYOffset + 475 < getPosition(footerChildren[1])) {
+    } if (pageYOffset + 600 < getPosition(footerChildren[1])) {
         footerChildren[1].classList.remove('box-active');
     }
 }
