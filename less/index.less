@@ -49,6 +49,28 @@
     background-image: url("background-wood.jpeg");
     background-size: 100%;
 
+    .logo, .cta {
+        transition: all 0.75s ease-in-out;
+        transform: translate3d(0px, -100px, 0);
+        opacity: 0;
+    }
+
+    .carousel {
+        transition: all 0.75s ease-in-out;
+        transform: translate3d(0px, 100px, 0);
+        opacity: 0;
+    }
+
+    .text-active {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
+    .box-active {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+
     .button {
         color: @offwhite
     }
