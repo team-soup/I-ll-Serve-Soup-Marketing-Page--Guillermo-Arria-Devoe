@@ -1,17 +1,21 @@
 # Everybody Eats! Soup Kitchen Landing Page
-I'll Serve Soup stand-alone landing/marketing page built for Lambda School's 2019 web fundamentals build week; cohort WEB17.
+I'll Serve Soup stand-alone landing/marketing page built for Lambda School's 2019 web fundamentals build week.
 
+### My role: Web UI Developer
+### Cohort: WEB17
+### Role Description:
 https://www.notion.so/Web-UI-Developer-Role-9978e2084bcc45a7a182638acf38b956
 
 ## Skills Employed:
 
-- User Interfaces
+- User Interface Design
 - Git for Web Development
 - Responsive Design
 - Pre-Processing with LESS
-- JavaScript Fundamentals
+- Vanilla JavaScript
 - DOM Manipulation
 - JavaScript Components
+- jQuery Library
 
 ## Inspiration:
 https://john2796.github.io/User-Interface-Project-Week/
