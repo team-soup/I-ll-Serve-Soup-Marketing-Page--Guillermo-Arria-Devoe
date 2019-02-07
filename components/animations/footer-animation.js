@@ -2,7 +2,8 @@ let footer = document.querySelector('footer');
 
 footerChildren = Array.from(footer.children);
 
-window.addEventListener('scroll',scrolling);
+// window.addEventListener('scroll',scrolling);
+$(window).scroll(scrolling);
 
 function getPosition(element) {
     var yPosition = 0;

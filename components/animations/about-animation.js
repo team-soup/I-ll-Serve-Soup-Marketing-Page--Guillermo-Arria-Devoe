@@ -2,7 +2,8 @@ let aboutSection = document.querySelector('.about');
 
 aboutSectionChildren = Array.from(aboutSection.children);
 
-window.addEventListener('scroll',scrolling);
+// window.addEventListener('scroll',scrolling);
+$(window).scroll(scrolling);
 
 function getPosition(element) {
     var yPosition = 0;

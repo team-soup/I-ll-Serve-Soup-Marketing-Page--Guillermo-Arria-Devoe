@@ -1,8 +1,8 @@
 class Carousel {
     constructor(element) {
         this.carousel = element;
-        this.rightBtn = this.carousel.querySelector('.right-button');
-        this.leftBtn = this.carousel.querySelector('.left-button');
+        // this.rightBtn = this.carousel.querySelector('.right-button');
+        // this.leftBtn = this.carousel.querySelector('.left-button');
         this.carouselItems = this.carousel.querySelectorAll('img');
    
         this.counter = 0;
@@ -11,8 +11,11 @@ class Carousel {
         this.current = this.carouselItems[0];
         this.current.style.display = 'block';
    
-        this.rightBtn.addEventListener('click', this.next.bind(this));
-        this.leftBtn.addEventListener('click', this.prev.bind(this));
+        // this.rightBtn.addEventListener('click', this.next.bind(this));
+        // this.leftBtn.addEventListener('click', this.prev.bind(this));
+
+        $('.right-button').click(this.next.bind(this));
+        $('.left-button').click(this.prev.bind(this));
        }
         
        prev(){

@@ -1,7 +1,8 @@
 class Feature {
     constructor(domElement) {
         this.domElement = domElement;
-        window.addEventListener('scroll',this.scrolling.bind(this));
+        // window.addEventListener('scroll',this.scrolling.bind(this));
+        $(window).scroll(this.scrolling.bind(this));
     };
 
     scrolling () {
