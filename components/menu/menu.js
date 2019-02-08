@@ -1,7 +1,6 @@
 const toggleMenu = (e) => {
     $(".menu").animate({
       height:'toggle',
-      opacity: 1,
     },450);
     e.stopPropagation();
   }
