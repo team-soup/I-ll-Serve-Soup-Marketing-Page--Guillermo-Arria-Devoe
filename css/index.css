@@ -367,9 +367,6 @@ footer {
 }
 footer .button {
   box-shadow: 0px 0px 10px black;
-  transition: all 0.15s ease-in-out;
-  transform: translate3d(0px, 30px, 0);
-  opacity: 1;
   background: #30323D;
 }
 @media (max-width: 600px) {
@@ -383,9 +380,6 @@ footer .button {
 footer .quote {
   text-align: center;
   width: 45%;
-  transition: all 0.5s ease-in-out;
-  transform: translate3d(0px, 30px, 0);
-  opacity: 1;
 }
 @media (max-width: 800px) {
   footer .quote {
