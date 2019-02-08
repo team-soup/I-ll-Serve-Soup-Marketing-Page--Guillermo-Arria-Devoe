@@ -13,5 +13,4 @@ const toggleMenu = (e) => {
   
   $(document).click(function(){
     $(".menu").animate({height:'hide'},450);
-    e.stopPropagation();
   });
