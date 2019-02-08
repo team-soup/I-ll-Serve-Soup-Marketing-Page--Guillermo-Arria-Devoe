@@ -164,7 +164,7 @@ p {
   z-index: 3;
   /* This set the layer level of the element, it has precendence over initial level of 1*/
   box-shadow: 0px 0px 30px black;
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
   margin-bottom: 50px;
   border-radius: 5px;
@@ -189,7 +189,7 @@ p {
 }
 .menu ul li {
   list-style-type: none;
-  padding: 10px 10px;
+  padding: 5px 10px;
   text-align: center;
 }
 .menu ul li a {
@@ -198,12 +198,10 @@ p {
   font-size: 2rem;
   color: #FAFAFA;
   text-shadow: 0px 0px 10px black;
+  transition: 0.15s;
 }
 .menu ul li a:hover {
-  color: lightskyblue;
-}
-.menu--open {
-  display: block;
+  color: lightyellow;
 }
 .button {
   text-decoration: none;
@@ -244,7 +242,6 @@ p {
 .background {
   background-image: url("background-wood.jpeg");
   background-size: 100%;
-  background-repeat: round;
 }
 .background .logo,
 .background .cta {
@@ -372,7 +369,7 @@ footer .button {
   box-shadow: 0px 0px 10px black;
   transition: all 0.15s ease-in-out;
   transform: translate3d(0px, 30px, 0);
-  opacity: 0;
+  opacity: 1;
   background: #30323D;
 }
 @media (max-width: 600px) {
@@ -388,7 +385,7 @@ footer .quote {
   width: 45%;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 30px, 0);
-  opacity: 0;
+  opacity: 1;
 }
 @media (max-width: 800px) {
   footer .quote {
