@@ -240,7 +240,7 @@ p {
   }
 }
 .background {
-  background-image: url("background-wood.jpeg");
+  background-image: url("/img/background-wood.jpeg");
   background-size: 100%;
 }
 .background .logo,
