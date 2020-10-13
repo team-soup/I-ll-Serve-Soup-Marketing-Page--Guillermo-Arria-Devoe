@@ -242,8 +242,8 @@ p {
 .background {
   height: 100vh;
   background-image: url("/img/background-wood.jpeg");
-  background-size: 100%;
-  background-repeat: round;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .background .logo,
 .background .cta {
