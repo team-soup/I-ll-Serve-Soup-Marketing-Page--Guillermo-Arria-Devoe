@@ -1,33 +1,30 @@
 # Everybody Eats! Soup Kitchen Landing Page
-I'll Serve Soup stand-alone landing/marketing page built for Lambda School's 2019 web fundamentals build week. Built using agile development techniques.
+Stand-alone landing page built for Lambda School's 2019 web fundamentals build week.
 
-### My role: 
+## Role and Skills Employed: 
 Web UI Developer
-
-### Cohort: 
-WEB17
-
-### Role Description:
-https://www.notion.so/Web-UI-Developer-Role-9978e2084bcc45a7a182638acf38b956
-
-## Skills Employed:
 
 - User Interface Design
 - Git for Web Development
 - Responsive Design
-- Pre-Processing with LESS
-- Vanilla JavaScript
 - DOM Manipulation
-- JavaScript Components
+- Agile Methodology
+
+## Technology:
+- Pre-Processing with LESS
+- Vanilla JavaScript and Components
 - jQuery Library
 
+## Development
+1. Fork and clone this repository to your machine
+2. Use your preferred package manager to install both less.js and less-watch-compiler:
+   1. `npm install less less-watch-compiler -g`
+3. Get started! Automatically compile less files into css using less-watch-compiler:
+   1. `less-watch-compiler less css index.less`
+
 ## Inspiration:
-https://john2796.github.io/User-Interface-Project-Week/
+[Shopify Landing Page](https://www.shopify.com/free-trial)
 
-https://www.shopify.com/free-trial
+[RIFA Soup Kitchen](http://www.rifajackson.org/ministries/soup-kitchen/)
 
-http://www.rifajackson.org/ministries/soup-kitchen/
-
-https://amazing-thompson-8473e8.netlify.com/
-
-https://github.com/daneden/animate.css?files=1
+[Hover CSS API](https://amazing-thompson-8473e8.netlify.com/)
