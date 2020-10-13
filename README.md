@@ -1,28 +1,21 @@
 # Everybody Eats! Soup Kitchen Landing Page
-Stand-alone landing page built for Lambda School's 2019 web fundamentals build week.
+Stand-alone landing page built for Lambda School's 2019 web fundamentals build week. Serves as marketing for both the soup kitchen and kitchen management software.
 
-## Role and Skills Employed: 
-Web UI Developer
-
-- User Interface Design
-- Git for Web Development
-- Responsive Design
-- DOM Manipulation
-- Agile Methodology
-
-## Technology:
-- Pre-Processing with LESS
-- Vanilla JavaScript and Components
-- jQuery Library
+## Technology
+- JavaScript
+- HTML
+- CSS
+- Less.js
+- jQuery
 
 ## Development
 1. Fork and clone this repository to your machine
 2. Use your preferred package manager to install both less.js and less-watch-compiler:
-   1. `npm install less less-watch-compiler -g`
+   `npm install less less-watch-compiler -g`
 3. Get started! Automatically compile less files into css using less-watch-compiler:
-   1. `less-watch-compiler less css index.less`
+   `less-watch-compiler less css index.less`
 
-## Inspiration:
+## Inspiration
 [Shopify Landing Page](https://www.shopify.com/free-trial)
 
 [RIFA Soup Kitchen](http://www.rifajackson.org/ministries/soup-kitchen/)
