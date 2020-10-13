@@ -240,8 +240,10 @@ p {
   }
 }
 .background {
+  height: 100vh;
   background-image: url("/img/background-wood.jpeg");
   background-size: 100%;
+  background-repeat: round;
 }
 .background .logo,
 .background .cta {
