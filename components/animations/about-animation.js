@@ -1,6 +1,6 @@
 let aboutSection = document.querySelector('.about');
 
-aboutSectionChildren = Array.from(aboutSection.children);
+// aboutSectionChildren = Array.from(aboutSection.children);
 
 // window.addEventListener('scroll',scrolling);
 $(window).scroll(scrolling);
@@ -18,13 +18,18 @@ function getPosition(element) {
 
 
 function scrolling() {
-    if (pageYOffset + 900 > getPosition(aboutSectionChildren[0])) {
-        aboutSectionChildren[0].classList.add('box-active');
-    } if (pageYOffset + 900 > getPosition(aboutSectionChildren[1])) {
-        aboutSectionChildren[1].classList.add('box-active');
-    } if (pageYOffset + 900 < getPosition(aboutSectionChildren[0])) {
-        aboutSectionChildren[0].classList.remove('box-active');
-    } if (pageYOffset + 900 < getPosition(aboutSectionChildren[1])) {
-        aboutSectionChildren[1].classList.remove('box-active');
+    // if (pageYOffset + 900 > getPosition(aboutSectionChildren[0])) {
+    //     aboutSectionChildren[0].classList.add('box-active');
+    // } if (pageYOffset + 900 > getPosition(aboutSectionChildren[1])) {
+    //     aboutSectionChildren[1].classList.add('box-active');
+    // } if (pageYOffset + 900 < getPosition(aboutSectionChildren[0])) {
+    //     aboutSectionChildren[0].classList.remove('box-active');
+    // } if (pageYOffset + 900 < getPosition(aboutSectionChildren[1])) {
+    //     aboutSectionChildren[1].classList.remove('box-active');
+    // }
+    if (pageYOffset + 900 > getPosition(aboutSection)) {
+        aboutSection.classList.add('box-active');
+    } if (pageYOffset + 900 < getPosition(aboutSection)) {
+        aboutSection.classList.remove('box-active');
     }
 }

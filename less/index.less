@@ -127,12 +127,13 @@
   width: 80%;
   margin: 0 auto;
 
+  
   .about {
-    .flex(space-between, center);
-    border-bottom: 5px double @gunmetal;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+      .flex(space-between, center);
+      border-bottom: 5px double @gunmetal;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    
     @media @phone {
       .flex(@dir: column);
       padding-top: 15px;
@@ -182,10 +183,15 @@
       }
     }
 
-    .box-active {
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
+    // .box-active {
+    //   transform: translate3d(0, 0, 0);
+    //   opacity: 1;
+    // }
+  }
+  
+  .box-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 
