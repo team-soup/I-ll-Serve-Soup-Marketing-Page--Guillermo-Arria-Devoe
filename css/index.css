@@ -213,26 +213,6 @@ p {
 .button:hover {
   background-color: #356799;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding-top: 15px;
-}
-.logo img {
-  margin-right: 10px;
-}
-.logo h2 {
-  color: #FAFAFA;
-  padding: 0;
-  text-shadow: 0px 0px 20px black;
-}
-@media (max-width: 600px) {
-  .logo h2 {
-    font-size: 2.5rem;
-  }
-}
 .background {
   height: 100vh;
   background-image: url("/img/background-wood.jpeg");
@@ -245,7 +225,33 @@ p {
   margin: 0 auto;
   text-align: center;
 }
-.background .container .logo,
+.background .container .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.background .container .nav-bar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.background .container .nav-bar .logo img {
+  margin-right: 10px;
+}
+.background .container .nav-bar .logo h2 {
+  color: #FAFAFA;
+  padding: 0;
+  text-shadow: 0px 0px 20px black;
+}
+@media (max-width: 600px) {
+  .background .container .nav-bar .logo h2 {
+    font-size: 2.5rem;
+  }
+}
+.background .container .nav-bar,
 .background .container .cta {
   transition: all 0.75s ease-in-out;
   transform: translate3d(0px, -100px, 0);
