@@ -372,7 +372,7 @@ p {
     padding-bottom: 15px;
   }
 }
-.middle-content .box-active {
+.middle-content .about .box-active {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
