@@ -8,234 +8,242 @@
 
 // BUTTON
 .button {
-    text-decoration: none;
-    font-size: 2rem;
-    color: @offwhite;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-family: 'PT Sans', sans-serif, bold;
-    box-shadow: 0px 0px 30px black;
-    transition: 0.15s ease-in-out;
-    border: 1px groove @offwhite;
-    background: @seagreen;
-    text-shadow: 0px 0px 10px black;
+  text-decoration: none;
+  font-size: 2rem;
+  color: @offwhite;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-family: "PT Sans", sans-serif, bold;
+  box-shadow: 0px 0px 30px black;
+  transition: 0.15s ease-in-out;
+  border: 1px groove @offwhite;
+  background: @seagreen;
+  text-shadow: 0px 0px 10px black;
 
-
-    &:hover {
-        background-color: @queenblue;
-    }
+  &:hover {
+    background-color: @queenblue;
+  }
 }
 
 // STYLING
 .logo {
-    .flex(center,center);
-    padding-top: 15px;
+  .flex(center,center);
+  padding-top: 15px;
 
-    img {
-        margin-right: 10px;
+  img {
+    margin-right: 10px;
+  }
+
+  h2 {
+    color: @offwhite;
+    padding: 0;
+    text-shadow: 0px 0px 20px black;
+
+    @media @phone {
+      font-size: 2.5rem;
     }
-
-    h2 {
-        color: @offwhite;
-        padding: 0;
-        text-shadow: 0px 0px 20px black;
-
-        @media @phone {
-            font-size: 2.5rem;
-        }
-    }
+  }
 }
 
 .background {
-    height: 100vh;
-    background-image: url("/img/background-wood.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  height: 100vh;
+  background-image: url("/img/background-wood.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-    .logo, .cta {
-        transition: all 0.75s ease-in-out;
-        transform: translate3d(0px, -100px, 0);
-        opacity: 0;
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    .logo,
+    .cta {
+      transition: all 0.75s ease-in-out;
+      transform: translate3d(0px, -100px, 0);
+      opacity: 0;
     }
 
     .carousel {
-        transition: all 0.75s ease-in-out;
-        transform: translate3d(0px, 100px, 0);
-        opacity: 0;
+      transition: all 0.75s ease-in-out;
+      transform: translate3d(0px, 100px, 0);
+      opacity: 0;
     }
 
     .text-active {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
     }
 
     .box-active {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
     }
 
     .button {
-        color: @offwhite
+      color: @offwhite;
     }
 
     .cta-text h1 {
-        margin-top: 0px;
-        margin-bottom: 35px;
-        color: @offwhite;
-        font-size: 5rem;
-        text-shadow: 0px 0px 20px black;
+      margin-top: 0px;
+      margin-bottom: 35px;
+      color: @offwhite;
+      font-size: 5rem;
+      text-shadow: 0px 0px 20px black;
 
-        @media @tablet {
-            font-size: 4rem;
-            margin-top: 10px;
-        }
+      @media @tablet {
+        font-size: 4rem;
+        margin-top: 10px;
+      }
 
-        @media @phone {
-            font-size: 3rem;
-            width: 75%;
-            margin: 0 auto;
-            margin-top: 0;
-            margin-bottom: 40px;
-        }
+      @media @phone {
+        font-size: 3rem;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
     }
 
     .carousel img {
-        border-radius: 10px;
+      border-radius: 10px;
     }
+  }
 }
 
 .middle-content {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 
-    .about {
-        .flex(space-between, center);
-        border-bottom: 5px double @gunmetal;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        @media @phone {
-            .flex(@dir: column);
-            padding-top: 15px;
-        }
-
-        h2 {
-            margin-bottom: 0;
-            margin-top: 10px;
-        }
-
-        .about-hours {
-            text-align: center;
-            width: 50%;
-            background: @gunmetal;
-            border: 1px groove @offwhite;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px black;
-            padding: 0 10px;
-            transition: all 0.5s ease-in-out;
-            transform: translate3d(0px, 30px, 0);
-            opacity: 0;
-
-            @media @phone {
-                width: 100%;
-            }
-
-            h2 {
-                color: honeydew;
-            }
-
-            p {
-                color: honeydew;
-                font-weight: 700;
-            }
-        }
-
-        .about-us {
-            text-align: center;
-            width: 45%;
-            transition: all 0.5s ease-in-out;
-            transform: translate3d(0px, 30px, 0);
-            opacity: 0;
-
-            @media @phone { 
-                width: 100%;
-                padding-bottom: 15px;
-            }
-        }
-
-        .box-active {
-            transform: translate3d(0, 0, 0);
-            opacity: 1;
-        }
-    }
-} 
-
-footer {
-    .flex(space-evenly, center);
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    .button {
-        box-shadow: 0px 0px 10px black;
-        background: @gunmetal;
-    }
+  .about {
+    .flex(space-between, center);
+    border-bottom: 5px double @gunmetal;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @media @phone {
-        .flex(@dir: column)
+      .flex(@dir: column);
+      padding-top: 15px;
     }
 
-    .quote {
-        text-align: center;
-        width: 45%;
+    h2 {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
 
-        @media @tablet {
-            width: 48%;
-        }
+    .about-hours {
+      text-align: center;
+      width: 50%;
+      background: @gunmetal;
+      border: 1px groove @offwhite;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px black;
+      padding: 0 10px;
+      transition: all 0.5s ease-in-out;
+      transform: translate3d(0px, 30px, 0);
+      opacity: 0;
 
-        @media @phone {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        
-        h3 {
-            margin-bottom: 0;
-        }
-        p {
-            margin-top: 5px;
-        }
+      @media @phone {
+        width: 100%;
+      }
+
+      h2 {
+        color: honeydew;
+      }
+
+      p {
+        color: honeydew;
+        font-weight: 700;
+      }
+    }
+
+    .about-us {
+      text-align: center;
+      width: 45%;
+      transition: all 0.5s ease-in-out;
+      transform: translate3d(0px, 30px, 0);
+      opacity: 0;
+
+      @media @phone {
+        width: 100%;
+        padding-bottom: 15px;
+      }
     }
 
     .box-active {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
     }
+  }
+}
+
+footer {
+  .flex(space-evenly, center);
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .button {
+    box-shadow: 0px 0px 10px black;
+    background: @gunmetal;
+  }
+
+  @media @phone {
+    .flex(@dir: column);
+  }
+
+  .quote {
+    text-align: center;
+    width: 45%;
+
+    @media @tablet {
+      width: 48%;
+    }
+
+    @media @phone {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 5px;
+    }
+  }
+
+  .box-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .credits {
-    margin-top: 10px;
-    padding: 15px 0;
-    .flex(@jc: center, @ai: center);
-    background: @gunmetal;
-    box-shadow: 0px 0px 10px black;
-    border-top: 1px groove honeydew;
+  margin-top: 10px;
+  padding: 15px 0;
+  .flex(@jc: center, @ai: center);
+  background: @gunmetal;
+  box-shadow: 0px 0px 10px black;
+  border-top: 1px groove honeydew;
 
-    p,a {
-        font-size: 1.3rem;
-        padding: 10px 10px;
-        margin: 0;
-        color: honeydew;
-        transition: .15s;
-        letter-spacing: 2px;
-        text-align: center;
-    }
+  p,
+  a {
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    margin: 0;
+    color: honeydew;
+    transition: 0.15s;
+    letter-spacing: 2px;
+    text-align: center;
+  }
 
-    p {
-        padding-right: 20px;
-    }
+  p {
+    padding-right: 20px;
+  }
 
-    a {
-        &:hover {
-            color: lightskyblue;
-        }
+  a {
+    &:hover {
+      color: lightskyblue;
     }
+  }
 }
