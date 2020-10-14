@@ -18,13 +18,13 @@ function getPosition(element) {
 
 
 function scrolling() {
-    if (pageYOffset + 600 > getPosition(aboutSectionChildren[0])) {
+    if (pageYOffset + 900 > getPosition(aboutSectionChildren[0])) {
         aboutSectionChildren[0].classList.add('box-active');
-    } if (pageYOffset + 600 > getPosition(aboutSectionChildren[1])) {
+    } if (pageYOffset + 900 > getPosition(aboutSectionChildren[1])) {
         aboutSectionChildren[1].classList.add('box-active');
-    } if (pageYOffset + 600 < getPosition(aboutSectionChildren[0])) {
+    } if (pageYOffset + 900 < getPosition(aboutSectionChildren[0])) {
         aboutSectionChildren[0].classList.remove('box-active');
-    } if (pageYOffset + 600 < getPosition(aboutSectionChildren[1])) {
+    } if (pageYOffset + 900 < getPosition(aboutSectionChildren[1])) {
         aboutSectionChildren[1].classList.remove('box-active');
     }
 }
