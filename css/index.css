@@ -138,65 +138,6 @@ p {
     margin-top: 0;
   }
 }
-.menu-button {
-  cursor: pointer;
-  margin-left: 20px;
-  border: 1px groove #FAFAFA;
-  border-radius: 5px;
-  box-shadow: 0px 0px 30px black;
-  transition: 0.15s;
-  background: #2e964f;
-}
-.menu-button:hover {
-  background: #356799;
-}
-.menu {
-  display: none;
-  position: relative;
-  top: 20px;
-  border: 1px groove #FAFAFA;
-  z-index: 3;
-  /* This set the layer level of the element, it has precendence over initial level of 1*/
-  box-shadow: 0px 0px 30px black;
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  background: #2e964f;
-}
-@media (max-width: 800px) {
-  .menu {
-    width: 75%;
-  }
-}
-@media (max-width: 600px) {
-  .menu {
-    width: 95%;
-  }
-}
-.menu ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  padding: 0;
-}
-.menu ul li {
-  list-style-type: none;
-  padding: 5px 10px;
-  text-align: center;
-}
-.menu ul li a {
-  text-decoration: none;
-  font-family: 'PT Sans', sans-serif, bold;
-  font-size: 2rem;
-  color: #FAFAFA;
-  text-shadow: 0px 0px 10px black;
-  transition: 0.15s;
-}
-.menu ul li a:hover {
-  color: lightyellow;
-}
 .button {
   text-decoration: none;
   text-align: center;
@@ -384,10 +325,6 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-footer .button {
-  box-shadow: 0px 0px 3px black;
-  background: #30323D;
-}
 @media (max-width: 600px) {
   footer {
     display: flex;
@@ -396,9 +333,19 @@ footer .button {
     flex-direction: column;
   }
 }
+footer .button {
+  box-shadow: 0px 0px 3px black;
+  background: #30323D;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
+}
 footer .quote {
   text-align: center;
   width: 45%;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 30px, 0);
+  opacity: 0;
 }
 @media (max-width: 800px) {
   footer .quote {

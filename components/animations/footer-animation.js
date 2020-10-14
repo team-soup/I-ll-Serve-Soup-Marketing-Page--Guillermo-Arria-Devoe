@@ -1,4 +1,4 @@
-let footer = document.querySelector('footer');
+let footer = document.querySelector('.bottom-content');
 
 footerChildren = Array.from(footer.children);
 
@@ -17,13 +17,13 @@ function getPosition(element) {
 }
 
 function scrolling() {
-    if (pageYOffset + 600 > getPosition(footerChildren[0])) {
+    if (pageYOffset + 900 > getPosition(footerChildren[0])) {
         footerChildren[0].classList.add('box-active');
-    } if (pageYOffset + 600 > getPosition(footerChildren[1])) {
+    } if (pageYOffset + 900 > getPosition(footerChildren[1])) {
         footerChildren[1].classList.add('box-active');
-    } if (pageYOffset + 600 < getPosition(footerChildren[0])) {
+    } if (pageYOffset + 900 < getPosition(footerChildren[0])) {
         footerChildren[0].classList.remove('box-active');
-    } if (pageYOffset + 600 < getPosition(footerChildren[1])) {
+    } if (pageYOffset + 900 < getPosition(footerChildren[1])) {
         footerChildren[1].classList.remove('box-active');
     }
 }

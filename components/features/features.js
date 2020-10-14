@@ -6,7 +6,7 @@ class Feature {
     };
 
     scrolling () {
-        if (pageYOffset + 920 > getPosition(this.domElement)) {
+        if (pageYOffset + 890 > getPosition(this.domElement)) {
             this.domElement.classList.add('feature-active');
         } else {
             this.domElement.classList.remove('feature-active');

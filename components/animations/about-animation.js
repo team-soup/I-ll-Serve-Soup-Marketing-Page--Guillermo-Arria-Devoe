@@ -16,7 +16,6 @@ function getPosition(element) {
     return yPosition
 }
 
-
 function scrolling() {
     if (pageYOffset + 900 > getPosition(aboutSectionChildren[0])) {
         aboutSectionChildren[0].classList.add('box-active');
