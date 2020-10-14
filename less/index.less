@@ -9,13 +9,15 @@
 // BUTTON
 .button {
   text-decoration: none;
+  text-align: center;
   font-size: 2rem;
   color: @offwhite;
-  padding: 15px 30px;
+    padding: 5px 0;
+  width: 150px;
   border-radius: 5px;
   font-family: "PT Sans", sans-serif, bold;
-  box-shadow: 0px 0px 30px black;
-  transition: 0.15s ease-in-out;
+  box-shadow: 0px 0px 20px black;
+  transition: 0.15s;
   border: 1px groove @offwhite;
   background: @seagreen;
   text-shadow: 0px 0px 10px black;
@@ -42,23 +44,23 @@
       padding-top: 15px;
       margin-bottom: 30px;
 
-        .logo {
-            .flex(center, center);
+      .logo {
+        .flex(center, center);
 
-            img {
-                margin-right: 10px;
-              }
-        
-              h2 {
-                color: @offwhite;
-                padding: 0;
-                text-shadow: 0px 0px 20px black;
-        
-                @media @phone {
-                  font-size: 2.5rem;
-                }
-              }
+        img {
+          margin-right: 10px;
         }
+
+        h2 {
+          color: @offwhite;
+          padding: 0;
+          text-shadow: 0px 0px 1s0px black;
+
+          @media @phone {
+            font-size: 2.5rem;
+          }
+        }
+      }
     }
 
     .nav-bar,
@@ -106,9 +108,9 @@
     }
 
     .cta-btns {
-        width: 450px;
-        margin: 0 auto;
-        .flex(space-around);
+      width: 500px;
+      margin: 0 auto;
+      .flex(space-around);
     }
 
     .carousel img {
@@ -143,7 +145,7 @@
       background: @gunmetal;
       border: 1px groove @offwhite;
       border-radius: 5px;
-      box-shadow: 0px 0px 10px black;
+      box-shadow: 0px 0px 3px black;
       padding: 0 10px;
       transition: all 0.5s ease-in-out;
       transform: translate3d(0px, 30px, 0);
@@ -189,7 +191,7 @@ footer {
   padding-bottom: 20px;
 
   .button {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 3px black;
     background: @gunmetal;
   }
 
@@ -229,7 +231,7 @@ footer {
   padding: 15px 0;
   .flex(@jc: center, @ai: center);
   background: @gunmetal;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0 3px black;
   border-top: 1px groove honeydew;
 
   p,
