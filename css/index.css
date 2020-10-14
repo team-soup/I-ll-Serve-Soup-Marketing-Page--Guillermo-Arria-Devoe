@@ -227,10 +227,11 @@ p {
 }
 .background .container .nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   padding-top: 15px;
+  margin-bottom: 30px;
 }
 .background .container .nav-bar .logo {
   display: flex;
