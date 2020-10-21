@@ -131,6 +131,12 @@
       width: 500px;
       margin: 0 auto;
       .flex(space-around);
+
+      @media @phone {
+        width: 100%;
+        height: 16em;
+        .flex(@ai: center, @dir: column)
+      }
     }
 
     .carousel img {
