@@ -176,8 +176,13 @@ p {
   padding-top: 15px;
   margin-bottom: 30px;
 }
-.background .container .logo img {
-  margin-right: 10px;
+@media (max-width: 600px) {
+  .background .container .logo {
+    display: flex;
+    justify-content: none;
+    align-items: none;
+    flex-direction: column;
+  }
 }
 .background .container .logo h2 {
   color: #FAFAFA;
@@ -190,10 +195,29 @@ p {
   }
 }
 .background .container .logo .logo-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.background .container .logo .logo-brand .logo-brand-img {
+  margin-right: 10px;
+}
+.background .container .logo .logo-brand .logo-brand-text {
   margin-right: 0.3em;
+}
+@media (max-width: 600px) {
+  .background .container .logo .logo-brand .logo-brand-text {
+    margin: 0;
+  }
 }
 .background .container .logo .logo-text {
   font-weight: 200;
+}
+@media (max-width: 600px) {
+  .background .container .logo .logo-text {
+    margin: 0;
+  }
 }
 .background .container .logo,
 .background .container .cta {

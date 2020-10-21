@@ -44,8 +44,8 @@
       padding-top: 15px;
       margin-bottom: 30px;
 
-      img {
-        margin-right: 10px;
+      @media @phone {
+        .flex(@dir: column);
       }
 
       h2 {
@@ -59,11 +59,27 @@
       }
 
       .logo-brand {
-        margin-right: 0.3em;
+        .flex(center, center);
+
+        .logo-brand-img {
+          margin-right: 10px;
+        }
+
+        .logo-brand-text {
+          margin-right: 0.3em;
+
+          @media @phone {
+            margin: 0;
+          }
+        }
       }
 
       .logo-text {
         font-weight: 200;
+
+        @media @phone {
+          margin: 0;
+        }
       }
     }
 
