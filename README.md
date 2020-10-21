@@ -5,7 +5,7 @@ Stand-alone landing page built for Lambda School's 2019 web fundamentals build w
 - JavaScript
 - HTML
 - CSS
-- Less.js
+- Less
 - jQuery
 
 ## Development
