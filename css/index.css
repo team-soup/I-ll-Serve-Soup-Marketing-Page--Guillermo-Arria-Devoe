@@ -182,6 +182,7 @@ p {
     justify-content: none;
     align-items: none;
     flex-direction: column;
+    padding-top: 30px;
   }
 }
 .background .container .logo h2 {
