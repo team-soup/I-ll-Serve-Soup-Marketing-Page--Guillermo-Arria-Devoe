@@ -173,7 +173,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding-top: 15px;
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 @media (max-width: 600px) {
@@ -182,7 +182,6 @@ p {
     justify-content: none;
     align-items: none;
     flex-direction: column;
-    padding-top: 30px;
   }
 }
 .background .container .logo h2 {
