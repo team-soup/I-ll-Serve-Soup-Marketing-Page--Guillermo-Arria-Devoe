@@ -176,27 +176,24 @@ p {
   padding-top: 15px;
   margin-bottom: 30px;
 }
-.background .container .nav-bar .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.background .container .nav-bar .logo img {
+.background .container .nav-bar img {
   margin-right: 10px;
 }
-.background .container .nav-bar .logo h2 {
+.background .container .nav-bar h2 {
   color: #FAFAFA;
   padding: 0;
   text-shadow: 0px 0px 10px black;
 }
 @media (max-width: 600px) {
-  .background .container .nav-bar .logo h2 {
+  .background .container .nav-bar h2 {
     font-size: 2.5rem;
   }
 }
-.background .container .nav-bar .logo h2 .logo-text {
-  font-weight: 500;
+.background .container .nav-bar .logo-brand {
+  margin-right: 0.3em;
+}
+.background .container .nav-bar .logo-text {
+  font-weight: 200;
 }
 .background .container .nav-bar,
 .background .container .cta {

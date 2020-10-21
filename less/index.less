@@ -44,26 +44,26 @@
       padding-top: 15px;
       margin-bottom: 30px;
 
-      .logo {
-        .flex(center, center);
+      img {
+        margin-right: 10px;
+      }
 
-        img {
-          margin-right: 10px;
+      h2 {
+        color: @offwhite;
+        padding: 0;
+        text-shadow: 0px 0px 10px black;
+
+        @media @phone {
+          font-size: 2.5rem;
         }
+      }
 
-        h2 {
-          color: @offwhite;
-          padding: 0;
-          text-shadow: 0px 0px 10px black;
+      .logo-brand {
+        margin-right: 0.3em;
+      }
 
-          @media @phone {
-            font-size: 2.5rem;
-          }
-
-          .logo-text {
-            font-weight: 500;
-          }
-        }
+      .logo-text {
+        font-weight: 200;
       }
     }
 
@@ -193,7 +193,7 @@ footer {
   .flex(space-evenly, center);
   padding-top: 20px;
   padding-bottom: 20px;
-  
+
   @media @phone {
     .flex(@dir: column);
   }
